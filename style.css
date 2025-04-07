@@ -28,3 +28,31 @@ body {
     margin: 10;
     padding: 10;
 }
+
+.scroll-down-arrow {
+    display: inline-block;
+    font-size: 40px;
+    text-decoration: none;
+    color: #333;
+    animation: bounce 2s infinite;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translate(-50%, 0);
+    }
+    50% {
+      transform: translate(-50%, 10px);
+    }
+  }
+  
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
