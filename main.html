@@ -12,13 +12,26 @@
         <h1>Welcome To Saavy16k</h1>
     </header>
     
-    <div class="image-slider" style="width: 500px; margin-left: 0; position: relative; overflow: hidden; display: flex; justify-content: flex-start;">        <div class="slides" style="display: flex; transition: transform 0.5s ease-in-out;">
+    <div class="image-slider" style="width: 500px; margin: 20px 0 0 0; position: relative; overflow: hidden; display: flex; justify-content: flex-start;">        
+        <div class="slides" style="display: flex; transition: transform 0.5s ease-in-out;">
             <img src="image1.jpg" alt="Image 1" style="width: 100%; flex-shrink: 0;">
             <img src="image2.jpg" alt="Image 2" style="width: 100%; flex-shrink: 0;">
         </div>
         <button class="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; cursor: pointer;" onclick="moveSlide(-1)">&#10094;</button>
         <button class="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; cursor: pointer;" onclick="moveSlide(1)">&#10095;</button>
     </div>
+
+    <div class="car-info" style="max-width: 400px;">
+        <h2>2024 Saavy X</h2>
+        <p><strong>Engine:</strong> 3.0L Turbocharged V6</p>
+        <p><strong>Horsepower:</strong> 400 hp</p>
+        <p><strong>Top Speed:</strong> 180 mph</p>
+        <p><strong>0-60 mph:</strong> 3.8 seconds</p>
+        <p><strong>Price:</strong> Starting at $60,000</p>
+        <p>This car blends futuristic design with high performance, making it perfect for both city cruising and highway racing.</p>
+    </div>
+
+
 
     <script>
         let currentIndex = 0;
